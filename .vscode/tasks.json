@@ -4,20 +4,30 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build RST documentation.",
+      "label": "Docs: Build RST documentation",
       "command": "${workspaceFolder}\\docs\\make.bat",
       "args": ["html"]
     },
     {
-      "label": "Clean RST documentation.",
+      "label": "Docs: Clean RST documentation",
       "command": "${workspaceFolder}\\docs\\make.bat",
-      "args": ["clean"]
+      "args": ["clean"],
     },
     {
-      "label": "Show RST documentation.",
+      "label": "Docs: Show RST documentation",
       "command": "explorer",
       "args": ["${workspaceFolder}\\build\\html\\index.html"],
-      "dependsOn": ["Build RST documentation."]
+      "dependsOn": ["Docs: Build RST documentation"]
+    },
+    {
+      "label": "Clean build",
+      "type":"shell",
+      "windows" :{
+        "command": "del /f ${workspaceFolder}\\build\\*"
+      },
+      "linux" :{
+        "command": "rm -rf ${workspaceFolder}\\build\\*"
+      }
     }
   ]
 }
