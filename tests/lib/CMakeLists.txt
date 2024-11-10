@@ -2,10 +2,10 @@ add_executable(libTests
   libTests.cpp
 )
 
-target_link_libraries(
-  libTests
+target_link_libraries(libTests
   lib
-  GTest::gtest_main
+  gtest
+  gtest_main
 )
 
 gtest_discover_tests(libTests)

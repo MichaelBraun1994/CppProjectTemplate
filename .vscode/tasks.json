@@ -6,26 +6,34 @@
     {
       "label": "Docs: Build RST documentation",
       "command": "${workspaceFolder}\\docs\\make.bat",
-      "args": ["html"]
+      "args": [
+        "html"
+      ]
     },
     {
       "label": "Docs: Clean RST documentation",
       "command": "${workspaceFolder}\\docs\\make.bat",
-      "args": ["clean"],
+      "args": [
+        "clean"
+      ],
     },
     {
       "label": "Docs: Show RST documentation",
       "command": "explorer",
-      "args": ["${workspaceFolder}\\build\\html\\index.html"],
-      "dependsOn": ["Docs: Build RST documentation"]
+      "args": [
+        "${workspaceFolder}\\build\\html\\index.html"
+      ],
+      "dependsOn": [
+        "Docs: Build RST documentation"
+      ]
     },
     {
       "label": "Clean build",
-      "type":"shell",
-      "windows" :{
-        "command": "del /f ${workspaceFolder}\\build\\*"
+      "type": "shell",
+      "windows": {
+        "command": "Remove-Item -Force -Recurse ${workspaceFolder}\\build\\*"
       },
-      "linux" :{
+      "linux": {
         "command": "rm -rf ${workspaceFolder}\\build\\*"
       }
     }

@@ -1,9 +1,7 @@
+#include <iostream>
 #include "lib.hpp"
 
-#include <iostream>
-
-
-void foo()
+void Foo()
 {
   std::cout << "Hello from lib\n";
 }

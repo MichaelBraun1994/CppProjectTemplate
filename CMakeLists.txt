@@ -25,12 +25,13 @@ endif()
 
 # Dependencies
 include(FetchContent)
+include(cmake/StaticAnalysis.cmake)
 
-# Sources
 add_subdirectory(src)
 
 if (BUILD_TESTING)
   message("Build tests")
+  enable_testing()
   add_subdirectory(tests)
 else()
   message("Don't build tests")

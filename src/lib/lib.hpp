@@ -1,3 +1,4 @@
 #pragma once
 
-void foo();
+void Foo();
+void Bar();

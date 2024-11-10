@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include "lib.hpp"
 
 int main()
@@ -13,6 +12,6 @@ int main()
   }
   return 1;
 
-  foo();
+  Foo();
   return 0;
 }

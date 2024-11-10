@@ -1,3 +1,4 @@
+set(CMAKE_CXX_CLANG_TIDY "clang-tidy")
 add_library(lib OBJECT
   lib.cpp
   lib.hpp
