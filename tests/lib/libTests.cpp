@@ -1,8 +1,10 @@
 #include <gtest/gtest.h>
+
 #include "lib.hpp"
 
 // Demonstrate some basic assertions.
-TEST(HelloTest, BasicAssertions) {
+TEST(HelloTest, BasicAssertions)
+{
   foo();
 
   // Expect two strings not to be equal.
