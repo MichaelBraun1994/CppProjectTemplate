@@ -1,0 +1,24 @@
+---
+BasedOnStyle: Google
+AccessModifierOffset: '-2'
+BreakBeforeBraces: Allman
+AlignAfterOpenBracket: DontAlign
+AlignArrayOfStructures: Right
+AlignEscapedNewlines: Left
+AllowAllArgumentsOnNextLine: 'false'
+AllowAllParametersOfDeclarationOnNextLine: 'false'
+AllowShortBlocksOnASingleLine: Empty 
+AllowShortFunctionsOnASingleLine: InlineOnly
+AllowShortIfStatementsOnASingleLine: Never
+AlwaysBreakBeforeMultilineStrings: 'false'
+BreakBeforeBinaryOperators: NonAssignment
+BreakInheritanceList: AfterComma
+ColumnLimit: '120'
+ConstructorInitializerIndentWidth: '2'
+ContinuationIndentWidth: '2'
+DerivePointerAlignment: 'false'
+InsertBraces: 'true'
+NamespaceIndentation: Inner
+PackConstructorInitializers: BinPack
+SortUsingDeclarations: Never
+TabWidth: '2'

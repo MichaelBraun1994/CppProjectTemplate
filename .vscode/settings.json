@@ -1,0 +1,8 @@
+{
+  "C_Cpp.clang_format_fallbackStyle": "google",
+  "C_Cpp.clang_format_style": "file",
+  "C_Cpp.formatting": "clangFormat",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true
+}
