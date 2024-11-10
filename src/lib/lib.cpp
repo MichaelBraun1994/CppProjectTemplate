@@ -1,7 +1,12 @@
 #include <iostream>
 #include "lib.hpp"
 
-void Foo()
+void Lib::PrintHelloWorld()
 {
-  std::cout << "Hello from lib\n";
+  std::cout << "Hello world!\n";
+}
+
+void Lib::PrintInput(std::string& input)
+{
+  std::cout << input << std::endl;
 }

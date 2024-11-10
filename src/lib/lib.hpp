@@ -1,4 +1,10 @@
 #pragma once
 
-void Foo();
-void Bar();
+#include <string>
+
+class Lib
+{
+public:
+  void PrintHelloWorld();
+  void PrintInput(std::string& input);
+};
