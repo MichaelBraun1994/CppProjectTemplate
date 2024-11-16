@@ -6,6 +6,9 @@ project(
   DESCRIPTION "An example project with CMake"
   LANGUAGES CXX)
 
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage -fno-elide-constructors -fprofile-instr-generate -fcoverage-mapping")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fprofile-arcs -ftest-coverage -fprofile-instr-generate -fcoverage-mapping")
+
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
   # Settings specific when using this as toplevel cmake file.
   set(CXX_STANDARD 20)
@@ -26,11 +29,11 @@ endif()
 # Dependencies
 include(FetchContent)
 include(cmake/StaticAnalysis.cmake)
+#include(cmake/Coverage.cmake)
 
 add_subdirectory(src)
 
 if (BUILD_TESTING)
-  message("Build tests")
   enable_testing()
   add_subdirectory(tests)
 else()
