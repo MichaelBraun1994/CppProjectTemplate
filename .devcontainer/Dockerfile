@@ -12,7 +12,7 @@ SHELL ["/bin/bash", "-c"]
 RUN apt-get update && apt-get install -y \
   build-essential git clang clang-tidy cppcheck ninja-build valgrind \
   cmake lld vim \
-  python3-pip python3-venv plantuml \
+  python3-pip python3-venv plantuml clangd \
   && groupadd --gid $USER_GID $USERNAME \
   && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME -s /usr/bin/bash \
   && apt-get update \

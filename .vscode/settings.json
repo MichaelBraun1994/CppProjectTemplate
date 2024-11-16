@@ -10,4 +10,14 @@
   "terminal.integrated.detectLocale": "off",
   "cmake.generator": "Ninja",
   "cmake.automaticReconfigure": false,
+  "cmake.buildDirectory": "${workspaceRoot}/build",
+  "cmake.sourceDirectory": "${workspaceRoot}",
+  "clangd.arguments": [
+    "-background-index",
+    "-compile-commands-dir=build"
+  ],
+  "cmake.additionalKits": [
+    "${workspaceRoot}/.vscode/cmake-kits.json"
+  ],
+  "clangd.path": "/usr/bin/clangd",
 }

@@ -15,7 +15,7 @@
         "html"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/docs"
+        "cwd": "${workspaceRoot}/docs"
       }
     },
     {
@@ -30,17 +30,17 @@
         "clean"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/docs"
+        "cwd": "${workspaceRoot}/docs"
       }
     },
     {
       "label": "Clean build",
       "type": "shell",
       "windows": {
-        "command": "Remove-Item -Force -Recurse ${workspaceFolder}\\build\\*"
+        "command": "Remove-Item -Force -Recurse ${workspaceRoot}\\build\\*"
       },
       "linux": {
-        "command": "rm -rf ${workspaceFolder}\\build\\*"
+        "command": "rm -rf ${workspaceRoot}/build/*"
       }
     }
   ]

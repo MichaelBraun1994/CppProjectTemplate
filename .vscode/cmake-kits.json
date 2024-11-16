@@ -1,0 +1,6 @@
+[
+  {
+    "name": "ClangDevContainer",
+    "toolchainFile": "${workspaceRoot}/cmake/toolchain.cmake"
+  }
+]
