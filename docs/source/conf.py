@@ -13,7 +13,7 @@ author = 'Dev'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-plantuml = 'java -jar C:\\ProgramData\\chocolatey\\lib\\plantuml\\tools\\plantuml.jar'
+plantuml = '/usr/bin/plantuml'
 extensions = ['sphinxcontrib.plantuml']
 
 templates_path = ['_templates']

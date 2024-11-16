@@ -7,4 +7,7 @@
   "editor.formatOnType": true,
   "C_Cpp.codeAnalysis.clangTidy.enabled": true,
   "C_Cpp.codeAnalysis.clangTidy.useBuildPath": true,
+  "terminal.integrated.detectLocale": "off",
+  "cmake.generator": "Ninja",
+  "cmake.automaticReconfigure": false,
 }
