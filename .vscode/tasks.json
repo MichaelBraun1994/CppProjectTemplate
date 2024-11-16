@@ -5,27 +5,33 @@
   "tasks": [
     {
       "label": "Docs: Build RST documentation",
-      "command": "${workspaceFolder}\\docs\\make.bat",
+      "windows": {
+        "command": "make.bat"
+      },
+      "linux": {
+        "command": "make"
+      },
       "args": [
         "html"
-      ]
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/docs"
+      }
     },
     {
       "label": "Docs: Clean RST documentation",
-      "command": "${workspaceFolder}\\docs\\make.bat",
+      "windows": {
+        "command": "make.bat"
+      },
+      "linux": {
+        "command": "make"
+      },
       "args": [
         "clean"
       ],
-    },
-    {
-      "label": "Docs: Show RST documentation",
-      "command": "explorer",
-      "args": [
-        "${workspaceFolder}\\build\\html\\index.html"
-      ],
-      "dependsOn": [
-        "Docs: Build RST documentation"
-      ]
+      "options": {
+        "cwd": "${workspaceFolder}/docs"
+      }
     },
     {
       "label": "Clean build",
