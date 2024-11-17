@@ -6,9 +6,13 @@ Checks: >
   cppcoreguidelines-*,
   readability-duplicate-include,
   readability-identifier-naming,
-  readablilty-function-size,
+  readability-function-size,
 
   -readability-use-std-min-max,
+
+  -cppcoreguidelines-avoid-c-arrays,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -modernize-avoid-c-arrays
 
   -bugprone-easily-swappable-parameters,
   -modernize-use-auto,
@@ -17,7 +21,7 @@ Checks: >
 
 FormatStyle: file
 WarningsAsErrors: '*'
-HeaderFilterRegex: ''
+HeaderFilterRegex: '.*'
 
 CheckOptions:
   - { key: readability-identifier-naming.NamespaceCase,         value: CamelCase }
@@ -29,4 +33,5 @@ CheckOptions:
   - { key: readability-identifier-naming.ParameterCase,         value: camelBack }
   - { key: readability-identifier-naming.MacroDefinitionCase,   value: UPPER_CASE }
   - { key: readability-identifier-naming.ConstexprVariableCase, value: UPPER_CASE }
-  - { key: readablilty-function-size.LineThreshold,             value: 100 }
+  - { key: readability-function-size.LineThreshold,             value: 100 }
+  - { key: readability-function-size.NestingThreshold,          value: 5 }

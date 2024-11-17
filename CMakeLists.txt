@@ -25,7 +25,7 @@ endif()
 
 # Dependencies
 include(FetchContent)
-#include(cmake/StaticAnalysis.cmake)
+include(cmake/StaticAnalysis.cmake)
 #include(cmake/Coverage.cmake)
 
 add_subdirectory(src)
